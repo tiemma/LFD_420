@@ -2,7 +2,7 @@
 ### Copyright, Jerry Cooperstein, coop@linuxfoundation.org 2/2003 - 1/2017 ####
 ### License: GPLv2 ###
 
-obj-m +=  for_each_process.o linked_list_master.o module_master.o module_slave.o
+obj-m +=  module_master_mutex.o module_master_sem.o module_slave1_mutex.o module_slave1_sem.o module_slave2_mutex.o
 
 export KROOT=/lib/modules/4.15.0-112-generic/build
 

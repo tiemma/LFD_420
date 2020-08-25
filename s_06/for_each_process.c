@@ -9,7 +9,7 @@ static int __init start(void)
     pr_info("Starting process list");
     for_each_process(p)
     {
-        pr_info("Process: command %s\npid %d, tgid %d, state %ld, parent id %d, self id %d\n",
+        pr_info("Process: command %s\npid %d, tgid %d, state %lx, parent id %d, self id %d\n",
                 p->comm,
                 p->pid,
                 p->tgid,
